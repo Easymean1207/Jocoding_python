@@ -22,5 +22,5 @@ isExist(str_1, userInput)
 print(str_1[::-1])
 
 gcu = ["michael", "porter", "lucy", "daniel"]
-gcu.replace("michael", "lucas")
+gcu.append("lucas")
 print(sorted(gcu))
