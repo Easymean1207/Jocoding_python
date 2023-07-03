@@ -21,6 +21,6 @@ isExist(str_1, userInput)
 # 문자열[처음 위치(이샹):끝 위치(미만):몇 스텝으로?(음수면 역값 반환)]
 print(str_1[::-1])
 
-gcu = ["michael", "echo", "lucy", "daniel"]
+gcu = ["michael", "porter", "lucy", "daniel"]
 gcu.append("lucas")
 print(sorted(gcu))
