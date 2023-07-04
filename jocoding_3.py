@@ -31,7 +31,7 @@ pocket = ["smartphone", "document", "glass_cleaner"]
 card = True
 
 """ 조건부 표현식(삼항 연산자의 python 형식) """
-# print("택시를 타고 가라") if "money" in pocket or card == True else print("걸어가라")
+print("택시를 타고 가라") if "money" in pocket or card == True else print("걸어가라")
 
 
 """' 반복문 """
