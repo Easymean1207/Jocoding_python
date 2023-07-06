@@ -59,7 +59,7 @@ add = lambda a, b: a + b
 print(add(1, 2))
 
 lambda_list = [lambda a, b: a + b, lambda a, b: a * b]
-print(lambda_list[0](1, 2))
+print(lambda_list[1](2, 6))
 
 
 """ 사용자 입출력 """
