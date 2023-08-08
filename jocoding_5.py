@@ -1,4 +1,4 @@
-""" immutable -> 정수, 실수, 문자열, 튜플 """
+""" Immutable -> 정수, 실수, 문자열, 튜플 """
 """ Mutable -> 리스트, 딕셔너리, 집합 """
 
 
@@ -48,12 +48,12 @@ class Calculator:
         return result
 
 
-value_cal = Calculator(1, 2)
-value_cal.setData(10, 2)
-sum_result = value_cal.sum()
-sub_result = value_cal.sub()
-mul_result = value_cal.mul()
-div_result = value_cal.div()
+cal_instance = Calculator(0, 0)
+cal_instance.setData(10, 2)
+sum_result = cal_instance.sum()
+sub_result = cal_instance.sub()
+mul_result = cal_instance.mul()
+div_result = cal_instance.div()
 
 
 # 상속(inheritance)
@@ -62,6 +62,7 @@ class ScientificCalculator(Calculator):
         result = self.first**self.second
         return result
 
+    # 메서드 오버라이딩
     def div(self):
         try:
             result = self.first / self.second
@@ -78,7 +79,7 @@ print(value_cal2.div())
 
 # 클래스 변수, 객체 변수
 class Family:
-    # 클래스 변수 -> 클래스에서 미리 정의해 놓은 클래스 공통적으로 적용되는 변수
+    # 클래스 변수 -> 클래스에서 미리 정의해 놓은 공통적으로 적용되는 변수
     last_name = "김"
 
 
@@ -160,10 +161,11 @@ eagle.fly()
     내장함수: python이 기본적으로 내장하고 있는 함수
     외장함수: 라이브러리 함수, import해서 쓰는 것
 """
-print(dir([1, 2, 3]))  # dir -> 자체적으로 가지고 있는 함수나 변수 보여줌
+
+print(dir([1, 2, 3]))  # dir -> 특정 자료형이 자체적으로 쓸 수 있는 명령어 모음을 보여줌
 print(divmod(7, 3))  # divmod -> 몫과 나머지를 tuple의 형태로 반환
 
-# enumerate -> 리스트를 key,value 형태(dictonary)로 반환
+# enumerate -> list를 key,value 형태(dictonary)로 반환
 for i, name in enumerate(["body", "hand", "foot"]):
     print(i, name)
 
